@@ -5,6 +5,8 @@
 
 from oop1 import Vehicle
 
+# GroundVehicle is a child class of Vehicle
+
 
 class GroundVehicle(Vehicle):
     def __init__(self, num_wheels=4):
@@ -12,7 +14,7 @@ class GroundVehicle(Vehicle):
 
     # TODO
     def drive(self):
-        return print(f'vroooom')
+        return f"vroooom"
 
 
 # gv = GroundVehicle()
@@ -26,14 +28,14 @@ class GroundVehicle(Vehicle):
 #
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
-
+# Motorcycle is a child class of GroundVehicle
 class Motorcycle(GroundVehicle):
     def __init__(self, num_wheels=2):
         self.num_wheels = num_wheels
     # TODO
 
     def drive(self):
-        return print(f'BRAAAP!!')
+        return f"BRAAAP!!"
 
 
 # m = Motorcycle()
