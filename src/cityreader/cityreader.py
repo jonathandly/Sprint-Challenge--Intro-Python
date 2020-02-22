@@ -38,7 +38,7 @@ def cityreader(cities=[]):
         f.readline()
 
         for c in csvreader:
-            cities.append(City(c[0], c[3], c[4]))
+            cities.append(City(c[0], float(c[3]), float(c[4])))
 
         f.close()
 
